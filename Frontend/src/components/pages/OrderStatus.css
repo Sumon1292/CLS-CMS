@@ -1,0 +1,36 @@
+.order-container {
+  padding: 0 2rem 2rem 2rem;
+  margin-top: 2rem;
+  height: 68vh;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+thead{
+  background-color: #EEEEEE;
+  border-bottom: 0.4pt solid #B7B7B7;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+}
+
+
+
+td{
+  border-bottom: 0.4pt solid #B7B7B7;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+tbody tr:hover {
+  background-color: #F1F6F9
+}
