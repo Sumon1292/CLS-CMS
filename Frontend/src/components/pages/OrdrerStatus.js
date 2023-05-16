@@ -8,7 +8,7 @@ function OrderStatus() {
 
     const [data, setData] = useState([]);
     useEffect(() => {
-      fetch('https://cmsfronttt.onrender.com/orders/checkstatus', {
+      fetch('https://fronter.onrender.com/orders/checkstatus', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

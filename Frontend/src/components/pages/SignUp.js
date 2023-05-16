@@ -40,7 +40,7 @@ function SignUp({setAuth}) {
 
     console.log(formData);
 
-    fetch("https://cmsfronttt.onrender.com/auth/register", {
+    fetch("https://fronter.onrender.com/auth/register", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

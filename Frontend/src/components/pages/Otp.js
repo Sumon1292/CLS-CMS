@@ -14,7 +14,7 @@ function Otp({setOtpVer}) {
     event.preventDefault();
 
     try {
-        const response = await fetch("https://cmsfronttt.onrender.com/auth/validateotp", {
+        const response = await fetch("https://fronter.onrender.com/auth/validateotp", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

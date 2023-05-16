@@ -1,5 +1,6 @@
 import React, { useContext, useState} from "react";
 import "./Navbar.css";
+import Dropdown from "./Dropdown";
 import {Link,useNavigate} from "react-router-dom";
 import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,7 +13,6 @@ function Navbar({setAuth}) {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-
   const navigate = useNavigate();
   const logout = (e) => {
     dispatch({type:"USER",payload:false})
@@ -21,7 +21,7 @@ function Navbar({setAuth}) {
       localStorage.removeItem("token");
       setAuth(false);
       navigate("/");
-      toast.success("Logout successfully");
+      toast.success("Logout successfull");
     } catch (err) {
       console.error(err.message);
     }
@@ -38,6 +38,11 @@ function Navbar({setAuth}) {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/PlaceOrders" className="nav-links" onClick={closeMobileMenu}>
+                Dashboard
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/Services" className="nav-links" onClick={closeMobileMenu}>
                 Services
               </Link>
@@ -47,7 +52,8 @@ function Navbar({setAuth}) {
                 Contact Us
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item"
+                >
               <Link to="/" className="nav-links" onClick={logout}>
                 Logout
               </Link>

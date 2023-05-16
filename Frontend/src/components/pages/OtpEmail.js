@@ -11,7 +11,7 @@ function OtpEmail({setEmailVer}) {
   async function handleSendOtp(event) {
     event.preventDefault();
 
-    fetch("https://cmsfronttt.onrender.com/auth/forgotpassword", {
+    fetch("https://fronter.onrender.com/auth/forgotpassword", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

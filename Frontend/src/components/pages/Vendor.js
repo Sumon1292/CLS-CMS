@@ -63,10 +63,10 @@ const Vendor = () => {
 
 	const handleQuotations = async (e) => {
     // make_visible('Quotations');
-	var distance = Math.abs(Zip_f-Zip_t)/1000;
-	var Fed_cost = parseInt(distance*(distance%9));
-	var Ups_cost = parseInt(distance*(distance%11));
-	var Usps_cost = parseInt(distance*(distance%13));
+	var distance = Math.abs(Zip_f-Zip_t)/100;
+	var Fed_cost = parseInt(distance*(distance%7));
+	var Ups_cost = parseInt(distance*(distance%9));
+	var Usps_cost = parseInt(distance*(distance%11));
 	if(Fed_cost == Math.min(Fed_cost,Ups_cost,Usps_cost)){
 		var carrie_coice = 'FedEx';
 		var Fed_cost1 = Fed_cost;
@@ -143,7 +143,7 @@ const Vendor = () => {
         <div >
 		<div>
 			<div>
-				<h2 className="vendor-heading">From Address</h2>
+				<h2 className="vendor-heading">From Warehouse Address</h2>
 			</div>
 			<div className="form-group">
 				<TextField
@@ -207,7 +207,7 @@ const Vendor = () => {
             <div className="two">
 		    <div>
             <div>
-				<h2 className="vendor-heading"> To Address</h2>
+				<h2 className="vendor-heading"> To Warehouse Address</h2>
 			</div>
 			<div className="form-group">
 				<TextField

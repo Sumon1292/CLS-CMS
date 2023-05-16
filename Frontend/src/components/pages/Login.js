@@ -33,7 +33,7 @@ function Login({setAuth}) {
 
         console.log(LoginData);
 
-        fetch("https://cmsfronttt.onrender.com/auth/login", {
+        fetch("https://fronter.onrender.com/auth/login", {
 
             method: 'POST',
 
@@ -52,11 +52,11 @@ function Login({setAuth}) {
                     localStorage.setItem('token', data.User.token);
                     dispatch({ type: "USER", payload: true });
                     setAuth(true);
-                    toast.success("Login succesfull");
+                    toast.success("Login successful");
                 }
                 else {
                     navigate('/User');
-                    toast.error("Login unsuccesfull");
+                    toast.error("Login unsuccessful");
                 }
 
             })

@@ -31,7 +31,7 @@ function App() {
 
   const checkAuthenticated = async () => {
     try {
-      const res = await fetch("https://cmsfronttt.onrender.com/auth/verify", {
+      const res = await fetch("https://fronter.onrender.com/auth/verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

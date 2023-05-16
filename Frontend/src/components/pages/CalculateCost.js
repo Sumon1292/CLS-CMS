@@ -29,7 +29,7 @@ function CalculateCost() {
     event.preventDefault();
     console.log(token);
 
-    fetch('https://cmsfronttt.onrender.com/placeorder/register', {
+    fetch('https://fronter.onrender.com/placeorder/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

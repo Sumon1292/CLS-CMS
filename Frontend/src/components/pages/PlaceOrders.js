@@ -19,7 +19,7 @@ function PlaceOrders() {
             />
             <Orderbtn
               src='images/checkstatus.jpg'
-              text='Check Your Status'
+              text='Check Your Order Details'
               path='/OrderStatus'
             />
             <Orderbtn

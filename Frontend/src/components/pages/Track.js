@@ -16,7 +16,7 @@ function Track() {
  async function handleSubmit(event){
     event.preventDefault();
 
-    fetch('https://cmsfronttt.onrender.com/orders/track', {
+    fetch('https://fronter.onrender.com/orders/track', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

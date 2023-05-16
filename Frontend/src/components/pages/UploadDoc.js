@@ -22,7 +22,7 @@ function UploadDoc() {
     formData.append('aadharId', aadharId);
     formData.append('file', file);
 
-    fetch('https://cmsfronttt.onrender.com/customers/upload', {
+    fetch('https://fronter.onrender.com/customers/upload', {
       method: 'POST',
       body: formData,
     })

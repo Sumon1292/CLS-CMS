@@ -6,7 +6,7 @@ function FrontPage() {
   return (
     <>
     <div className='home-container'>
-      <video src = "\video\video3.mp4" autoPlay loop muted />
+      <video src = "\video\video2.mp4" autoPlay loop muted />
       <h1>CONNECTING YOUR BUSINESS</h1>
       <h1>ALL OVER INDIA</h1>
     </div>

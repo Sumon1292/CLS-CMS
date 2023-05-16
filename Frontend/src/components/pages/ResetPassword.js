@@ -19,7 +19,7 @@ function ResetPassword() {
     }
 
     try {
-      const response = await fetch("https://cmsfronttt.onrender.com/auth/resetpassword", {
+      const response = await fetch("https://fronter.onrender.com/auth/resetpassword", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
